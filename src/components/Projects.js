@@ -27,9 +27,9 @@ export default class Projects extends Component {
             <p>
               Currently working on a Cards Against Humanity based mobile game
               after my friends and I realized that there is no such application
-              suitable for mobile players. Follow the design here and the
-              development here.
-            </p>
+              suitable for mobile players. Follow the <a href="https://www.figma.com/file/w39Enz0IAlLG47WUXdIq03/CardGame?node-id=0%3A1">design here </a>and the
+              <a href="https://github.com/helenwxdong/card-project"> development here</a>.
+              </p>
           ),
         },
         {
@@ -41,7 +41,7 @@ export default class Projects extends Component {
             <p>
               Third version of my personal website! Compared to V1, this site is
               much more clean and includes better user experience. Follow the
-              code process here.
+              <a href="https://github.com/helenwxdong/Portfolio"> code process here</a>.
             </p>
           ),
         },
@@ -67,7 +67,8 @@ export default class Projects extends Component {
               This project uses machine learning to determine the most optimal
               subreddits to place your posts to gain the most attraction.
               Created with 3 other hackers during hack the north. Was personally
-              responsible for the entire front-end of the project
+              responsible for the entire front-end of the project. Checkout our 
+              <a href="https://github.com/AndrewPochapsky/hack-the-north-2019"> code here</a>
             </p>
           ),
         },

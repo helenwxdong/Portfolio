@@ -61,8 +61,9 @@ export default class Experience extends Component {
             <p>
               GoldenHack is Laurier's new hackathon.{" "}
               <b>I lead the redesign of the goldenHack website</b> to be more
-              clean, professional, and interactive. I prototyped the designs on{" "}
-              <b>Figma</b> and edited the designs after user testing to ensure
+              clean, professional, and interactive. I prototyped the 
+              <a href="https://www.figma.com/file/VDb1JPEAKRiiZf3pnBw7TW/GoldenHack-2020"> designs on{" "}
+              <b>Figma</b> </a> and edited the designs after user testing to ensure
               the best experience for the user.
             </p>
           ),
