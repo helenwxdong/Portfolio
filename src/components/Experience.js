@@ -6,6 +6,8 @@ import Form from "react-bootstrap/Form";
 import manulife from "./images/manulife.jpg";
 import syngli from "./images/syngli.png";
 import goldenhack from "./images/goldenhack.png";
+import MediaQuery from "react-responsive";
+import { useMediaQuery } from "react-responsive";
 
 export default class Experience extends Component {
   constructor(props) {
@@ -36,7 +38,8 @@ export default class Experience extends Component {
           date: "Jan 2019 - April 2019",
           company: "Syngli Inc",
           image: syngli,
-          description: (<p>
+          description: (
+            <p>
               My first co-op was a cool mix between business and tech. My
               favourite project is{" "}
               <b>designing and coding the current website homepage</b>. During
@@ -46,32 +49,63 @@ export default class Experience extends Component {
               complete website and coding it in <b>JavaScript, HTML/CSS, PHP</b>
               . I also developed a go-to marketing plan and advertising campaign
               for Syngli in addition to fixing bugs on the website.
-            </p>),
+            </p>
+          ),
         },
         {
           title: "UX Developer",
           date: "Jan 2020 - Present",
           company: "the GoldenHack (Wilfrid Laurier University)",
           image: goldenhack,
-          description: <p>
-              GoldenHack is Laurier's new hackathon. <b>I lead the redesign of the goldenHack website</b> to 
-              be more clean, professional, and interactive.{" "}
-              I prototyped the designs on <b>Figma</b> and edited the designs after user testing to ensure 
+          description: (
+            <p>
+              GoldenHack is Laurier's new hackathon.{" "}
+              <b>I lead the redesign of the goldenHack website</b> to be more
+              clean, professional, and interactive. I prototyped the designs on{" "}
+              <b>Figma</b> and edited the designs after user testing to ensure
               the best experience for the user.
-          </p>,
+            </p>
+          ),
         },
       ],
     };
   }
-  render() {
+
+  CreateLayout = () => {
+    const isDesktop = useMediaQuery({
+      query: "(min-width: 700px)",
+    });
+    const isMobile = useMediaQuery({
+      query: "(max-width: 699px)",
+    });
     return (
-      <div style={experienceStyle}>
-        <h1 style={{ textAlign: "center", paddingBottom: "10px" }}>My Work</h1>
-        <CreateExperience item={this.state.experiences[0]} />
-        <CreateExperience item={this.state.experiences[1]} />
-        <CreateExperience item={this.state.experiences[2]} />
+      <div>
+        {isDesktop && (
+          <div style={experienceStyle}>
+            <h1 style={{ textAlign: "center", paddingBottom: "10px" }}>
+              My Work
+            </h1>
+            <CreateExperience item={this.state.experiences[0]} />
+            <CreateExperience item={this.state.experiences[1]} />
+            <CreateExperience item={this.state.experiences[2]} />
+          </div>
+        )}
+        {isMobile && (
+          <div style={mobileStyle}>
+            <h1 style={{ textAlign: "center", paddingBottom: "10px" }}>
+              My Work
+            </h1>
+            <CreateExperience item={this.state.experiences[0]} />
+            <CreateExperience item={this.state.experiences[1]} />
+            <CreateExperience item={this.state.experiences[2]} />
+          </div>
+        )}
       </div>
     );
+  };
+
+  render() {
+    return <this.CreateLayout></this.CreateLayout>;
   }
 }
 
@@ -84,10 +118,11 @@ function CreateExperience(props) {
             <div class="col-lg-3">
               <Image
                 src={props.item.image}
-                style={{ borderRadius: "50%", width: "200px" }}/>
+                style={{ borderRadius: "50%", width: "200px" }}
+              />
             </div>
             <div class="col">
-              <Card.Title style={{fontSize:'25px'}}>
+              <Card.Title style={{ fontSize: "25px" }}>
                 {props.item.title}
               </Card.Title>
               <Card.Title>
@@ -108,5 +143,11 @@ function CreateExperience(props) {
 const experienceStyle = {
   height: "100%",
   padding: "42rem 7rem 2rem 7rem",
+  fontFamily: "Inter",
+};
+
+const mobileStyle = {
+  height: "100%",
+  padding: "42rem 10px 2rem 10px",
   fontFamily: "Inter",
 };
