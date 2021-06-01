@@ -10,6 +10,7 @@ import reddit from "./images/redditoptimizer.png";
 import profile from "./images/profile.JPG";
 import chess from "./images/chess.jpg";
 import cards from "./images/cards.png";
+import stoinks from "./images/stoinks.png";
 import MediaQuery from "react-responsive";
 import { useMediaQuery } from "react-responsive";
 
@@ -19,16 +20,16 @@ export default class Projects extends Component {
     this.state = {
       experiences: [
         {
-          title: "Cards Against Humanity Game",
-          date: "Jan 2020 - Present",
-          image: cards,
-          tech: "React Native, JavaScript, HTML/CSS",
+          title: "Stoinks (Stocks Simulator)",
+          date: "Winter 2021",
+          image: stoinks,
+          tech: "Figma",
           description: (
             <p>
-              Currently working on a Cards Against Humanity based mobile game
-              after my friends and I realized that there is no such application
-              suitable for mobile players. Follow the <a href="https://www.figma.com/file/w39Enz0IAlLG47WUXdIq03/CardGame?node-id=0%3A1">design here </a>and the
-              <a href="https://github.com/helenwxdong/card-project"> development here</a>.
+              This was created during a designathon with a couple other designers.
+              We conducted user interviews to identify their pain points regarding financial
+              literacy. Checkout the 
+               <a href="https://www.figma.com/file/w39Enz0IAlLG47WUXdIq03/CardGame?node-id=0%3A1"> full mockup here</a>.
               </p>
           ),
         },

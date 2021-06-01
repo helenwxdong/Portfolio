@@ -40,7 +40,7 @@ const Responsive = () => {
                 </h1>
                 <h2>
                   {" "}
-                  I'm a software engineer who cares <br /> about UX.
+                  I'm a software engineer, a UX designer,  <br /> and a 4th year student.
                 </h2>
                 <br />
                 <h2>Let's talk.</h2>
@@ -53,8 +53,8 @@ const Responsive = () => {
                 </h1>
                 <h3>
                   {" "}
-                  I'm a software engineer who
-                  <br /> cares about UX.
+                  I'm a software engineer and
+                  <br /> a UX designer.
                 </h3>
                 <br />
                 <h3>Let's talk.</h3>

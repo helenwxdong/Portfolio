@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Image from "react-bootstrap/Image";
 import Form from "react-bootstrap/Form";
 import manulife from "./images/manulife.jpg";
+import ix from "./images/IX.jpg";
 import syngli from "./images/syngli.png";
 import goldenhack from "./images/goldenhack.png";
 import MediaQuery from "react-responsive";
@@ -14,6 +15,24 @@ export default class Experience extends Component {
     super(props);
     this.state = {
       experiences: [
+        {
+          title: "Software Engineer",
+          date: "Jan 2021 - May 2021",
+          company: "Index Exchange",
+          image: ix,
+          description: (
+            <p>
+              During my most recent co-op, I implemented multiple back-end applications
+              in <b>Go</b>. I was responsible for testing my own code through writing
+              unit and end-to-end tests and occasionally deployment. 
+              One of my most relevant works involves implementing 
+              certain GDPR regulations into our legacy code which resulted in an increase
+              of 300,000 bid requests processed and anonymized per week. I also worked on
+              front-end tasks in <b>React</b> and <b>Angular</b>and gained experience using
+              <b>Docker</b> and <b>Ansible</b>.
+            </p>
+          ),
+        },
         {
           title: "Full Stack Software Engineer",
           date: "Jan 2020 - May 2020",
