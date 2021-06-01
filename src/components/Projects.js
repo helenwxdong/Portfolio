@@ -29,7 +29,7 @@ export default class Projects extends Component {
               This was created during a designathon with a couple other designers.
               We conducted user interviews to identify their pain points regarding financial
               literacy. Checkout the 
-               <a href="https://www.figma.com/file/w39Enz0IAlLG47WUXdIq03/CardGame?node-id=0%3A1"> full mockup here</a>.
+               <a href="https://www.figma.com/proto/M5vkFz8ckZYlmDoyQvCTvK/TILE?node-id=8%3A3&scaling=scale-down&page-id=0%3A1"> full mockup here</a>.
               </p>
           ),
         },
