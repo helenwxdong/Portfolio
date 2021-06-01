@@ -27,8 +27,8 @@ export default class Experience extends Component {
               unit and end-to-end tests. One of my most relevant work involves implementing 
               GDPR regulations into our legacy code which resulted in an increase
               of 300,000 bid requests processed and anonymized per week. I also worked on
-              front-end tasks in <b>React</b> and <b>Angular</b>and gained experience using
-               <b>Docker</b> and <b>Ansible</b>.
+              front-end tasks in <b>React</b> and <b>Angular</b> and gained experience using
+              <b> Docker</b> and <b>Ansible</b>.
             </p>
           ),
         },
