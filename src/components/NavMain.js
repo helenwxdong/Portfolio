@@ -12,9 +12,9 @@ export default class NavMain extends Component {
           <Navbar fixed="top" style={{backgroundColor:'#b3c6cd', paddingLeft:"50px", paddingRight:"50px"}}>
           <Navbar.Brand href="#home"><Image src={logo} style={{height:'30px'}}/></Navbar.Brand>
           <Nav className="ml-auto">
-            <Nav.Link href="#features">Experiences</Nav.Link>
-            <Nav.Link href="#pricing">Projects</Nav.Link>
-            <Nav.Link href="#pricing">About Me</Nav.Link>
+            <Nav.Link href="#experience">Experiences</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#aboutme">About Me</Nav.Link>
           </Nav>
         </Navbar>
         )

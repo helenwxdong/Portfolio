@@ -101,7 +101,7 @@ export default class Experience extends Component {
       <div>
         {isDesktop && (
           <div style={experienceStyle}>
-            <h1 style={{ textAlign: "center", paddingBottom: "10px" }}>
+            <h1 style={{ textAlign: "center", paddingBottom: "10px" }} id = "experience">
               My Work
             </h1>
             <CreateExperience item={this.state.experiences[0]} />
@@ -111,7 +111,7 @@ export default class Experience extends Component {
         )}
         {isMobile && (
           <div style={mobileStyle}>
-            <h1 style={{ textAlign: "center", paddingBottom: "10px" }}>
+            <h1 style={{ textAlign: "center", paddingBottom: "10px" }} id = "experience">
               My Work
             </h1>
             <CreateExperience item={this.state.experiences[0]} />

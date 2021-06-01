@@ -45,7 +45,7 @@ export default class About extends Component {
     });
 
     return (
-      <div>
+      <div id="aboutme">
         {isDesktop && (
           <div style={experienceStyle}>
             <div class="row">
