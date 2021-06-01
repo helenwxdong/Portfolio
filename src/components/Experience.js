@@ -22,14 +22,13 @@ export default class Experience extends Component {
           image: ix,
           description: (
             <p>
-              During my most recent co-op, I implemented multiple back-end applications
+              During my most recent co-op, I implemented features in multiple back-end applications
               in <b>Go</b>. I was responsible for testing my own code through writing
-              unit and end-to-end tests and occasionally deployment. 
-              One of my most relevant works involves implementing 
-              certain GDPR regulations into our legacy code which resulted in an increase
+              unit and end-to-end tests. One of my most relevant work involves implementing 
+              GDPR regulations into our legacy code which resulted in an increase
               of 300,000 bid requests processed and anonymized per week. I also worked on
               front-end tasks in <b>React</b> and <b>Angular</b>and gained experience using
-              <b>Docker</b> and <b>Ansible</b>.
+               <b>Docker</b> and <b>Ansible</b>.
             </p>
           ),
         },
