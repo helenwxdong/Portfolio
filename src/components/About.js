@@ -13,24 +13,25 @@ export default class About extends Component {
       aboutText: (
         <div>
           <p>
-            Hi, my name is Helen Dong! I'm a 4th year Computer Science and BBA
+            I'm a 4th year Computer Science and BBA
             student completing a double degree program with the Unversity of
-            Waterloo and Wilfrid Laurier University.
+            Waterloo and Wilfrid Laurier University. I am graduating in August 2022
+            so I'm currently searching for full time Software Engineering or Product related roles.
           </p>
           <p>
-            I like to consider myself a software engineer with a passion for UX
-            design. Throughout my undergrad and co-ops, I worked with many
-            languages -- including React, C++, JavaScript, and so on. I also
-            developed an interest in user experience. I believe that even as
-            engineers, it is crucial that I understand, take part in, and
-            support the design of my work. Due to my interests, I have also
-            designed multiple solutions in addition to developing them.
+            I do what I do because I like solving problems for people. There's nothing better than seeing
+            your work rolled out and knowing that it's making a difference to someone else. My goal at the moment is to learn 
+            as much as I can to hone my skills as a software engineer but my long term goal is to become a manager. 
           </p>
           <p>
-            At core, I think of myself as a quick learner, problem solver, and
-            collaborator. Outside of school and work, I love rock climbing,
-            drawing, and modelling.
+            My least favourite thing about being a software engineer is how it hurts my back. If you know of any good solutions
+            to ease back pain, please let me know and I will be forever thankful.
           </p>
+          <p>
+            I'm great at collaboration, I love learning, and I love taking risks. During my internships, I have moderated events and given a 
+            presentation to the entire engineering team on how to give better demos.
+          </p>
+          <p>In my spare time, I like rock climbing, dancing, and hiking. A fun fact about me is that I am currently living in British Columbia.</p>
         </div>
       ),
     };
@@ -57,7 +58,7 @@ export default class About extends Component {
               </div>
               <div class="col">
                 <h3 style={{ paddingBottom: "2rem", fontStyle: "italic" }}>
-                  Software Engineer with a passion for UX
+                  Hi, thanks for stopping by!
                 </h3>
                 <p>{this.state.aboutText}</p>
               </div>

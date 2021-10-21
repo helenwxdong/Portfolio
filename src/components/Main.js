@@ -40,7 +40,7 @@ const Responsive = () => {
                 </h1>
                 <h2>
                   {" "}
-                  I'm a software engineer, a UX designer,  <br /> and a 4th year student.
+                  I'm a software engineer intern at Zynga and <br /> a soon to be Computer Science graduate <br/>@ UWaterloo.
                 </h2>
                 <br />
                 <h2>Let's talk.</h2>
@@ -54,7 +54,7 @@ const Responsive = () => {
                 <h3>
                   {" "}
                   I'm a software engineer and
-                  <br /> a UX designer.
+                  <br />a soon to be Computer <br/>Science graduate <br/>@ UWaterloo.
                 </h3>
                 <br />
                 <h3>Let's talk.</h3>
@@ -98,7 +98,7 @@ const Responsive = () => {
               </h1>
               <h3 style={{ color: "white" }}>
                 {" "}
-                I'm a software engineer who cares <br /> about UX.
+                I'm a software engineer and a soon to be Computer Science graduate @ UWaterloo.
               </h3>
               <br />
               <h3 style={{ color: "white" }}>Let's talk.</h3>

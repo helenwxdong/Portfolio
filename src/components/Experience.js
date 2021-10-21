@@ -5,6 +5,7 @@ import Image from "react-bootstrap/Image";
 import Form from "react-bootstrap/Form";
 import manulife from "./images/manulife.jpg";
 import ix from "./images/IX.jpg";
+import zynga from "./images/zynga.jpg";
 import syngli from "./images/syngli.png";
 import goldenhack from "./images/goldenhack.png";
 import MediaQuery from "react-responsive";
@@ -12,9 +13,22 @@ import { useMediaQuery } from "react-responsive";
 
 export default class Experience extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       experiences: [
+        {
+          title: "Software Engineer",
+          date: "Sep 2021 - Present",
+          company: "Zynga",
+          image: zynga,
+          description: (
+            <p>
+              I am currently doing mobile game development for Zynga. I use <b>React Native</b> 
+              to develop IOS and Android features for the Words With Friends game. Keep an eye out
+              for their new Clubs feature which I am currently helping develop ;)
+            </p>
+          ),
+        },
         {
           title: "Software Engineer",
           date: "Jan 2021 - May 2021",
@@ -22,12 +36,13 @@ export default class Experience extends Component {
           image: ix,
           description: (
             <p>
-              During my most recent co-op, I implemented features in multiple back-end applications
-              in <b>Go</b>. I was responsible for testing my own code through writing
-              unit and end-to-end tests. One of my most relevant work involves implementing 
-              GDPR regulations into our legacy code which resulted in an increase
-              of 300,000 bid requests processed and anonymized per week. I also worked on
-              front-end tasks in <b>React</b> and <b>Angular</b> and gained experience using
+              One of my most enjoyable co-ops was implementing backend features 
+              in <b>Go</b> at Index Exchange. I enjoyed the impact that my work had on the company despite 
+              only being an intern. During my work term, I programmed a method of reclassifying missing domains
+              which resulted in a <b>40% increase in domains being categorized</b>. I also worked on the core system 
+              by implementing GDPR regulations into the legacy code which resulted in an <b>increase
+              of 300,000 bid requests processed and anonymized per week</b>. I was able to work on
+              front-end tasks as well in <b>React</b> and <b>Angular</b> and gained experience using
               <b> Docker</b> and <b>Ansible</b>.
             </p>
           ),
@@ -40,14 +55,13 @@ export default class Experience extends Component {
           description: (
             <p>
               In my second co-op, I helped solve problems for internal
-              employees. Our tech stack for our web apps are:
-              <b> React, Node, Express, SQL</b>. My coworkers called me a{" "}
-              <b>"front-end expert"</b> -- I definitely do not consider myself
-              an expert 😋 but my greatest strengths in the team were my
-              front-end knowledge and problem solving skills. Therefore, I took
-              on many projects that involved designing features to solve a
-              painpoint and programming the features before delivering my work
-              to the users to test and receive feedback.
+              employees at Manulife with a team of other co-ops. I developed multiple features using 
+              <b> React, Node, Express, SQL</b>. During this internship, I had alot of autonomy and 
+              was able to learn many things by myself. Within the team, I improved my problem solving skills
+              and leadership skills through <b>leading the team through the design and development of full stack features</b>. I really
+              enjoyed the product management aspect of taking a user's painpoint and creating and developing a
+              solution. However, due to the team being composed purely of co-ops, I was missing guidance
+              from a senior software engineer on how to better improve my code.
             </p>
           ),
         },
@@ -58,31 +72,14 @@ export default class Experience extends Component {
           image: syngli,
           description: (
             <p>
-              My first co-op was a cool mix between business and tech. My
-              favourite project is{" "}
-              <b>designing and coding the current website homepage</b>. During
-              my interview with the company, I critiqued the website as lacking
-              in user experience which lead me to take on this project. This was
+              My first co-op was mostly a business role but I was also able to do some front-end work. My
+              favourite project was{" "}
+              <b>designing and coding <a href="https://www.syngli.com/"> their home page </a>which is still being used right now</b>. During
+              my interview with the company, I critiqued the website as being poor in user experience which lead me to take on this project. This was
               challenging yet very enjoyable as it was my first time designing a
               complete website and coding it in <b>JavaScript, HTML/CSS, PHP</b>
               . I also developed a go-to marketing plan and advertising campaign
               for Syngli in addition to fixing bugs on the website.
-            </p>
-          ),
-        },
-        {
-          title: "UX Developer",
-          date: "Jan 2020 - Present",
-          company: "the GoldenHack (Wilfrid Laurier University)",
-          image: goldenhack,
-          description: (
-            <p>
-              GoldenHack is Laurier's new hackathon.{" "}
-              <b>I lead the redesign of the goldenHack website</b> to be more
-              clean, professional, and interactive. I prototyped the 
-              <a href="https://www.figma.com/file/VDb1JPEAKRiiZf3pnBw7TW/GoldenHack-2020"> designs on{" "}
-              <b>Figma</b> </a> and edited the designs after user testing to ensure
-              the best experience for the user.
             </p>
           ),
         },
@@ -102,11 +99,12 @@ export default class Experience extends Component {
         {isDesktop && (
           <div style={experienceStyle}>
             <h1 style={{ textAlign: "center", paddingBottom: "10px" }} id = "experience">
-              My Work
+              Work Experience
             </h1>
             <CreateExperience item={this.state.experiences[0]} />
             <CreateExperience item={this.state.experiences[1]} />
             <CreateExperience item={this.state.experiences[2]} />
+            <CreateExperience item={this.state.experiences[3]} />
           </div>
         )}
         {isMobile && (
@@ -117,6 +115,7 @@ export default class Experience extends Component {
             <CreateExperience item={this.state.experiences[0]} />
             <CreateExperience item={this.state.experiences[1]} />
             <CreateExperience item={this.state.experiences[2]} />
+            <CreateExperience item={this.state.experiences[3]} />
           </div>
         )}
       </div>
